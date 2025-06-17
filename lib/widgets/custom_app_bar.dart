@@ -9,7 +9,7 @@ class CustomAppBar extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.only(top: 50 ),
       child: Row(
-        spacing: 245,
+        spacing: 225,
         children: [
           Text('Notes',style: TextStyle(fontSize: 28),),
         CustomSearchIcon()
