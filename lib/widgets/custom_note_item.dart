@@ -4,7 +4,7 @@ import 'package:notes_app/view/edit_view.dart';
 
 class NoteItem extends StatelessWidget {
   const NoteItem({super.key, required this.noteModel});
- final NoteModel noteModel;
+  final NoteModel noteModel;
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -46,7 +46,9 @@ class NoteItem extends StatelessWidget {
                     ),
                   ),
                   trailing: IconButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      noteModel.delete();
+                    },
                     icon: Icon(Icons.delete, color: Colors.black, size: 32),
                   ),
                 ),
