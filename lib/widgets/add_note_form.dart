@@ -42,7 +42,10 @@ class _AddNoteFormState extends State<AddNoteForm> {
               subtitle = value;
             },
           ),
-              ColorsListView(),
+              Padding(
+                padding: const EdgeInsets.symmetric(vertical: 29),
+                child: ColorsListView(),
+              ),
           BlocBuilder<AddNoteCubit, AddNoteState>(
             builder: (context, state) {
               return CustomButton(
